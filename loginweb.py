@@ -32,7 +32,6 @@ def sche_run():
     # schedule.every().day.at("18:00").do(login_web)
     # schedule.every().day.at("20:00").do(login_web)
 
-
     #设置定时任务
     # schedule.every(10).minutes.do(job)  # 每隔 10 分钟运行一次 job 函数
     # schedule.every().hour.do(job)  # 每隔 1 小时运行一次 job 函数
@@ -41,21 +40,10 @@ def sche_run():
     # schedule.every().wednesday.at("13:15").do(job)  # 每周三 13：15 时间点运行 job 函数
     # schedule.every().minute.at(":17").do(job)  # 每分钟的 17 秒时间点运行 job 函数
 
-
     while True:
         schedule.run_pending()  # 运行所有可以运行的任务
         time.sleep(1)
 
-
-
 if __name__ == "__main__":
 
     sche_run()
-
-
-
-
-
-
-
-
